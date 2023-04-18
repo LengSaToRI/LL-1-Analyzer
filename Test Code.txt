@@ -1,0 +1,11 @@
+源代码：
+<! System=OMS Version=1.0 Code=UTF Data=1.0 !>
+<调度日报::华东 Date=’2006-09-02’>
+@@  序号   数据名称      数据值       
+#   1     统调发电量     1856198 
+#   2     统调火电量     1744342
+#   3     统调水电量     46119
+</调度日报::华东>
+
+修改为英文：
+<! System=OMS Version=1.0 Code=UTF Data=1.0 !> <report::east> @@ num name data #1 ele 1856198 #2 fire 1744342 #3 water 46119 </report::east>&

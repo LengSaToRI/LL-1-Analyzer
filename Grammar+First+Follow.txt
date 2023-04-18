@@ -1,0 +1,32 @@
+S->ABCDE
+A-><!F!>
+F->G=PF|Ɛ
+G->System|Version|Code|Data
+P->0|...|Z
+B-><P::P>
+E-></P::P>
+C->@@H
+D->#HD|Ɛ
+H->PH|Ɛ
+
+first(S)={ <! }
+first(A)={ <! }
+first(F)={ S | V | C | D }
+first(G)={ S | V | C | D }
+first(P)={ 0 | ... | Z }
+first(B)={ < }
+first(E)={ </ }
+first(C)={ @@ }
+first(D)={ # }
+first(H)={ 0 | ... | Z }
+
+follow(S)={ & }
+follow(A)={ < , & }
+follow(F)={ !> }
+follow(G)={ = }
+follow(P)={ :: , > , S ,V ,C ,D , !> }
+follow(B)={ @@ , & }
+follow(E)={ & }
+follow(C)={ #, & }
+follow(D)={ </ , & }
+follow(H)={ #, </ , & }
